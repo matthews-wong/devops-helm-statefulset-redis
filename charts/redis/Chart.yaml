@@ -1,0 +1,6 @@
+apiVersion: v2
+name: redis
+description: Single-node Redis as a StatefulSet with a headless Service and persistent volume
+type: application
+version: 0.1.0
+appVersion: "7.4.1"
