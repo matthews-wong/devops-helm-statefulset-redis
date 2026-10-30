@@ -9,3 +9,4 @@ validate:
 	done
 	@if helm lint $(CHART) --set image.tag=latest >/dev/null 2>&1; then \
 	  echo "schema should reject image.tag=latest"; exit 1; fi
+	@scripts/assert-render.sh
