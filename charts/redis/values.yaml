@@ -21,3 +21,8 @@ resources:
   limits:
     cpu: 500m
     memory: 256Mi
+
+# Off by default: with a single replica, minAvailable: 1 would block node drains.
+# Set exactly one of minAvailable / maxUnavailable (maxUnavailable defaults to 1).
+podDisruptionBudget:
+  enabled: false
